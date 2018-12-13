@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="ZH-CN">
+<head>
+    <meta charset="utf-8">
+    <title>处方拍照</title>
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <style>
+        .booth {
+            width: 400px;
+            height:300px;
+            background: #ccc;
+            border: 10px solid #ddd;
+            margin: 0 auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #29a5e9;
+            color: #fff;
+            font-size: 16px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            border: 1px solid #29a5e9;
+            float: right;
+            margin-right: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .btn:hover {
+                border: 2px solid #999999;
+            }
+        .cancelbtn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #fff;
+            color: #000;
+            font-size: 16px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            float: right;
+            border: 1px solid #999999;
+            margin-right: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .cancelbtn:hover {
+                border: 2px solid #999999;
+            }
+    </style>
+</head>
+<body>
+    <div class=booth>
+        <object CLASSID="clsid:454C18E2-8B7D-43C6-8C17-B1825B49D7DE"
+                id="captrue" style="width:100%;height:100%;"></object>
+    </div>
+    <div align="center" style="width: 400px;height:50px;margin: 10px auto;">
+        <input type="button" class="cancelbtn" value="关闭" onClick="closed()">
+        <input type="button" class="btn" value="拍摄" onClick="tack()">
+    </div>
+    <script>
+        $(function () {
+            captrue.bStopPlay();
+            captrue.bStartPlay();
+        });
+        //拍摄
+        function tack() {
+            var data = captrue.sGetBase64();
+            captrue.bStopPlay();
+            window.returnValue = data;
+            window.close();
+        }
+        function closed() {
+            captrue.bStopPlay();
+            window.returnValue = null;
+            window.close();
+        }
+    </script>
+</body>
+</html>

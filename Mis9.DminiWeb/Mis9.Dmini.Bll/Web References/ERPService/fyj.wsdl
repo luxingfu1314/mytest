@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SaleList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="json" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaleListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaleListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="outpOrderCompletionNotify">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="outpOrderCompletionNotifyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="outpOrderCompletionNotifyResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="outpBatcheno">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="outpBatchenoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="outpBatchenoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="outWare">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="outWareResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="outWareResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="int" type="s:int" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SaleListSoapIn">
+    <wsdl:part name="parameters" element="tns:SaleList" />
+  </wsdl:message>
+  <wsdl:message name="SaleListSoapOut">
+    <wsdl:part name="parameters" element="tns:SaleListResponse" />
+  </wsdl:message>
+  <wsdl:message name="outpOrderCompletionNotifySoapIn">
+    <wsdl:part name="parameters" element="tns:outpOrderCompletionNotify" />
+  </wsdl:message>
+  <wsdl:message name="outpOrderCompletionNotifySoapOut">
+    <wsdl:part name="parameters" element="tns:outpOrderCompletionNotifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="outpBatchenoSoapIn">
+    <wsdl:part name="parameters" element="tns:outpBatcheno" />
+  </wsdl:message>
+  <wsdl:message name="outpBatchenoSoapOut">
+    <wsdl:part name="parameters" element="tns:outpBatchenoResponse" />
+  </wsdl:message>
+  <wsdl:message name="outWareSoapIn">
+    <wsdl:part name="parameters" element="tns:outWare" />
+  </wsdl:message>
+  <wsdl:message name="outWareSoapOut">
+    <wsdl:part name="parameters" element="tns:outWareResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaleListHttpGetIn">
+    <wsdl:part name="json" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaleListHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="outpOrderCompletionNotifyHttpGetIn">
+    <wsdl:part name="xml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="outpOrderCompletionNotifyHttpGetOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="outpBatchenoHttpGetIn">
+    <wsdl:part name="xml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="outpBatchenoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="outWareHttpGetIn">
+    <wsdl:part name="xml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="outWareHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SaleListHttpPostIn">
+    <wsdl:part name="json" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaleListHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="outpOrderCompletionNotifyHttpPostIn">
+    <wsdl:part name="xml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="outpOrderCompletionNotifyHttpPostOut">
+    <wsdl:part name="Body" element="tns:int" />
+  </wsdl:message>
+  <wsdl:message name="outpBatchenoHttpPostIn">
+    <wsdl:part name="xml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="outpBatchenoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="outWareHttpPostIn">
+    <wsdl:part name="xml" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="outWareHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="fyjSoap">
+    <wsdl:operation name="SaleList">
+      <wsdl:input message="tns:SaleListSoapIn" />
+      <wsdl:output message="tns:SaleListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="outpOrderCompletionNotify">
+      <wsdl:input message="tns:outpOrderCompletionNotifySoapIn" />
+      <wsdl:output message="tns:outpOrderCompletionNotifySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="outpBatcheno">
+      <wsdl:input message="tns:outpBatchenoSoapIn" />
+      <wsdl:output message="tns:outpBatchenoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="outWare">
+      <wsdl:input message="tns:outWareSoapIn" />
+      <wsdl:output message="tns:outWareSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="fyjHttpGet">
+    <wsdl:operation name="SaleList">
+      <wsdl:input message="tns:SaleListHttpGetIn" />
+      <wsdl:output message="tns:SaleListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="outpOrderCompletionNotify">
+      <wsdl:input message="tns:outpOrderCompletionNotifyHttpGetIn" />
+      <wsdl:output message="tns:outpOrderCompletionNotifyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="outpBatcheno">
+      <wsdl:input message="tns:outpBatchenoHttpGetIn" />
+      <wsdl:output message="tns:outpBatchenoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="outWare">
+      <wsdl:input message="tns:outWareHttpGetIn" />
+      <wsdl:output message="tns:outWareHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="fyjHttpPost">
+    <wsdl:operation name="SaleList">
+      <wsdl:input message="tns:SaleListHttpPostIn" />
+      <wsdl:output message="tns:SaleListHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="outpOrderCompletionNotify">
+      <wsdl:input message="tns:outpOrderCompletionNotifyHttpPostIn" />
+      <wsdl:output message="tns:outpOrderCompletionNotifyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="outpBatcheno">
+      <wsdl:input message="tns:outpBatchenoHttpPostIn" />
+      <wsdl:output message="tns:outpBatchenoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="outWare">
+      <wsdl:input message="tns:outWareHttpPostIn" />
+      <wsdl:output message="tns:outWareHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="fyjSoap" type="tns:fyjSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaleList">
+      <soap:operation soapAction="http://tempuri.org/SaleList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outpOrderCompletionNotify">
+      <soap:operation soapAction="http://tempuri.org/outpOrderCompletionNotify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outpBatcheno">
+      <soap:operation soapAction="http://tempuri.org/outpBatcheno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outWare">
+      <soap:operation soapAction="http://tempuri.org/outWare" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="fyjSoap12" type="tns:fyjSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaleList">
+      <soap12:operation soapAction="http://tempuri.org/SaleList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outpOrderCompletionNotify">
+      <soap12:operation soapAction="http://tempuri.org/outpOrderCompletionNotify" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outpBatcheno">
+      <soap12:operation soapAction="http://tempuri.org/outpBatcheno" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outWare">
+      <soap12:operation soapAction="http://tempuri.org/outWare" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="fyjHttpGet" type="tns:fyjHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="SaleList">
+      <http:operation location="/SaleList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outpOrderCompletionNotify">
+      <http:operation location="/outpOrderCompletionNotify" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outpBatcheno">
+      <http:operation location="/outpBatcheno" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outWare">
+      <http:operation location="/outWare" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="fyjHttpPost" type="tns:fyjHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="SaleList">
+      <http:operation location="/SaleList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outpOrderCompletionNotify">
+      <http:operation location="/outpOrderCompletionNotify" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outpBatcheno">
+      <http:operation location="/outpBatcheno" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="outWare">
+      <http:operation location="/outWare" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="fyj">
+    <wsdl:port name="fyjSoap" binding="tns:fyjSoap">
+      <soap:address location="http://111.198.116.117:8088/fyj.asmx" />
+    </wsdl:port>
+    <wsdl:port name="fyjSoap12" binding="tns:fyjSoap12">
+      <soap12:address location="http://111.198.116.117:8088/fyj.asmx" />
+    </wsdl:port>
+    <wsdl:port name="fyjHttpGet" binding="tns:fyjHttpGet">
+      <http:address location="http://111.198.116.117:8088/fyj.asmx" />
+    </wsdl:port>
+    <wsdl:port name="fyjHttpPost" binding="tns:fyjHttpPost">
+      <http:address location="http://111.198.116.117:8088/fyj.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

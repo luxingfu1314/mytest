@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Mis9.DminiWeb", "Mis9.DminiWeb\", "{3A066578-A100-4574-8073-0A8DFED8E6AC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{b31e4e8d-314d-44bb-9902-70d4ec128146}|Mis9.Dmini.Bll.dll;{2cd71b89-61f5-4426-8644-2663d1dd05dc}|Mis9.Dmini.DAL.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56676"
+		Debug.AspNetCompiler.PhysicalPath = "Mis9.DminiWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56676\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56676"
+		Release.AspNetCompiler.PhysicalPath = "Mis9.DminiWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56676\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56676"
+		SlnRelativePath = "Mis9.DminiWeb\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mis9.Dmini.Bll", "Mis9.Dmini.Bll\Mis9.Dmini.Bll.csproj", "{B31E4E8D-314D-44BB-9902-70D4EC128146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mis9.Dmini.DAL", "Mis9.Dmini.DAL\Mis9.Dmini.DAL.csproj", "{2CD71B89-61F5-4426-8644-2663D1DD05DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A066578-A100-4574-8073-0A8DFED8E6AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A066578-A100-4574-8073-0A8DFED8E6AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A066578-A100-4574-8073-0A8DFED8E6AC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3A066578-A100-4574-8073-0A8DFED8E6AC}.Debug|x86.Build.0 = Debug|Any CPU
+		{3A066578-A100-4574-8073-0A8DFED8E6AC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A066578-A100-4574-8073-0A8DFED8E6AC}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3A066578-A100-4574-8073-0A8DFED8E6AC}.Release|x86.ActiveCfg = Debug|Any CPU
+		{3A066578-A100-4574-8073-0A8DFED8E6AC}.Release|x86.Build.0 = Debug|Any CPU
+		{B31E4E8D-314D-44BB-9902-70D4EC128146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31E4E8D-314D-44BB-9902-70D4EC128146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31E4E8D-314D-44BB-9902-70D4EC128146}.Debug|x86.ActiveCfg = Debug|x86
+		{B31E4E8D-314D-44BB-9902-70D4EC128146}.Debug|x86.Build.0 = Debug|x86
+		{B31E4E8D-314D-44BB-9902-70D4EC128146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31E4E8D-314D-44BB-9902-70D4EC128146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31E4E8D-314D-44BB-9902-70D4EC128146}.Release|x86.ActiveCfg = Release|x86
+		{B31E4E8D-314D-44BB-9902-70D4EC128146}.Release|x86.Build.0 = Release|x86
+		{2CD71B89-61F5-4426-8644-2663D1DD05DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD71B89-61F5-4426-8644-2663D1DD05DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD71B89-61F5-4426-8644-2663D1DD05DC}.Debug|x86.ActiveCfg = Debug|x86
+		{2CD71B89-61F5-4426-8644-2663D1DD05DC}.Debug|x86.Build.0 = Debug|x86
+		{2CD71B89-61F5-4426-8644-2663D1DD05DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD71B89-61F5-4426-8644-2663D1DD05DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD71B89-61F5-4426-8644-2663D1DD05DC}.Release|x86.ActiveCfg = Release|x86
+		{2CD71B89-61F5-4426-8644-2663D1DD05DC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C53F7E0B-B346-4227-A0F7-55CCBAAA623B}
+	EndGlobalSection
+EndGlobal

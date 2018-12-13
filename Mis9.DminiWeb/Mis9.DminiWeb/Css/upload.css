@@ -1,0 +1,90 @@
+﻿.main {
+    margin:auto;
+    width: 1000px;
+    background-color:honeydew;
+}
+
+.div {
+    margin:40px 40px 40px 40px;
+}
+
+.divn {
+    margin: 10px 0 10px 5px;
+}
+
+.filebox {
+    height: 38px;
+    font-size: 26px;
+}
+
+.qrname {
+    margin-left: 10px;
+    height: 35px;
+    width: 180px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #77d4c1;
+    color: #fff;
+    font-size: 32px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    width: 160px;
+    margin:50px;
+}
+
+.ico {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../Images/ico.png) no-repeat
+}
+
+.ico10 {
+    background-position: -104px 0;
+    width: 38px;
+    height: 38px
+}
+
+.ico11 {
+    background-position: -152px -1px;
+    width: 38px;
+    height: 38px
+}
+
+.ico12 {
+    background-position: -203px 0;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.ico13 {
+    background-position: -258px 0;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #000;
+    background-color: #fff;
+    margin-bottom:10px;
+    margin-left:5px;
+}
+
+
+.lables {
+    width: 200px;
+    margin-right: 10px;
+    font-size: 26px;
+    text-align: right;
+}
+
+.layerhight {
+    line-height: 36px;
+}
+
+.WaitIng {
+    line-height: 36px;
+}

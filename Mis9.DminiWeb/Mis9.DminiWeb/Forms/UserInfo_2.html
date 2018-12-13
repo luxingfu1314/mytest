@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../SoftKey/vk_loader.js?vk_layout=CN%20Chinese%20Simpl.%20Pinyin&vk_skin=flat_gray"></script>
+    <script src="../Scripts/dmini.js"></script>
+    <script src="../Scripts/cart.js"></script>
+    <script src="../Scripts/layui/layui.all.js"></script>
+    <script src="../Scripts/layui/layui.js"></script>
+    <link href="../Scripts/layui/css/layui.css" rel="stylesheet" />
+    <link href="../Css/jqueryui/jquery-ui.min.css" rel="stylesheet" />
+    <link href="../Css/dmini.css" rel="stylesheet" />
+    <link href="../Css/jqueryui/jquery-ui.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.10.2.min.js"></script>
+    <script src="../Scripts/jquery-1.10.2.js"></script>
+    <script src="../Scripts/jqueryui/jquery-ui.js"></script>
+    <script src="../Scripts/jqueryui/jquery-ui.min.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+    <script>
+        var idcard = "";
+        var name = "";
+        var sex = "";
+        var born = "";
+        var phoneno = "";
+        var diseasehistory = "";//疾病史
+        var allergyhistory = "";//过敏史
+        var curid = "idPhoneNo";
+        $(function () {
+            VirtualKeyboard.toggle('idPhoneNo', 'softkey');
+            $("#kb_langselector,#kb_mappingselector,#copyrights").css("display", "none");
+            //
+            var date = new Date;
+            var year = date.getFullYear(); 
+            //
+            $("#idBirthday").datepicker({
+                dateFormat: 'yymmdd',
+                showOtherMonths: true,
+                dayNamesMin: ['日', '一', '二', '三', '四', '五', '六'],
+                changeYear: true,
+                changeMonth: true,
+                yearRange: (year-100)+':' + year,
+                monthNamesShort: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月']  //且让月份显示为中文
+
+
+            });
+        });
+        function bindKeyboard(id) {
+            if (curid == id) return;
+            VirtualKeyboard.toggle(id, 'softkey');
+            curid = id;
+        }
+
+        function tack() {
+            idcard = document.getElementById("idCertNbr").value;
+            name = document.getElementById("idName").value;
+            if (name == "") {
+                layer.alert("<h1 class='layerhight'>" + "姓名不可为空！" + "</h1>",
+                    {
+                        area: ['500px', 'auto']
+                    });
+                return 0;
+            }
+            sex = document.getElementById("idSex").value;
+            if (sex == "") {
+                layer.alert("<h1 class='layerhight'>" + "性别不可为空！" + "</h1>",
+                    {
+                        area: ['500px', 'auto']
+                    });
+                return 0;
+            }
+            born = document.getElementById("idBirthday").value;
+            if (name == "") {
+                layer.alert("<h1 class='layerhight'>" + "出生年月不可为空！" + "</h1>",
+                    {
+                        area: ['500px', 'auto']
+                    });
+                return 0;
+            }
+            //
+            diseasehistory = $("#disease").val();
+            if (diseasehistory == "") {
+                layer.alert("<h1 class='layerhight'>" + "疾病史不可为空！" + "</h1>",
+                    {
+                        area: ['500px', 'auto']
+                    });
+                return 0;
+            }
+            allergyhistory = $("#allergy").val();
+            if (allergyhistory == "") {
+                layer.alert("<h1 class='layerhight'>" + "过敏史不可为空！" + "</h1>",
+                    {
+                        area: ['500px', 'auto']
+                    });
+                return 0;
+            }
+            phoneno = $("#idPhoneNo").val();
+
+            return 1;
+        }
+
+
+        function TackIdentityCard() {
+            //
+            var WaitText = '请将身份证置于身份证识别区！';
+            operationType = -1;
+            indexWait = LoadWait(WaitText, 60000);//1分钟后自动退出
+            //
+            var readerState = CVR_IDCard.ListReaderCard();
+            //
+            if (readerState == 1) {
+                //连接正常，启动监听
+                timeoutIndex = setInterval("ReadCard()", 1000); //每秒执行一次
+            }
+            else if (readerState == 0) {
+                operationType = 1;
+                layer.close(indexWait);
+                layer.alert("<h1 class='layerhight'>" + "无读卡器连接！" + "</h1>",
+                    {
+                        area: ['500px', 'auto']
+                    });
+                return;
+            }
+        }
+        var readcardbusy = false;
+        function ReadCard() {
+            if (readcardbusy) return;
+            readcardbusy = true;
+            var strReadResult = CVR_IDCard.ReadCard();
+            if (strReadResult == "0") {
+                clearInterval(timeoutIndex);
+                operationType = 1;
+                layer.close(indexWait);
+                //
+                document.getElementById("idName").value = CVR_IDCard.Name;
+                var sexindex = CVR_IDCard.Sex;
+                var ss = document.getElementById("idSex");
+                ss[sexindex-1].selected = true;//选中
+                document.getElementById("idBirthday").value = CVR_IDCard.Born;
+                document.getElementById("idCertNbr").value = CVR_IDCard.CardNo;
+                //
+                idcard = CVR_IDCard.CardNo;//身份证号
+                name = CVR_IDCard.Name;//姓名
+                sex = CVR_IDCard.Sex;//性别
+                born = CVR_IDCard.Born;//出生日期
+                readcardbusy = false;
+            }
+            else {
+                readcardbusy = false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div style="width:656px;background: #ccc;border: 10px solid #ddd;margin: 0 auto;font-size:24px;">
+        <table width="656" border="0" cellpadding="0" cellspacing="0" style="font-size:16px;">
+            <tbody>
+                <tr>
+                    <td height="58"><div align="left" class="form_text">姓名<e class="red">(*)：</div></td>
+                    <td><input type="text" name="Name" class="form_input" id="idName" onclick="bindKeyboard('idName')"></td>
+                    <td height="58"><div align="left" class="form_text">性别<e class="red">(*)：</div></td>
+                    <td>
+                        <select name="Sex" id="idSex">
+                            <option value="男">男
+                            <option value="女">女
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="58"><div align="left" class="form_text">出生日期<e class="red">(*)：</div></td>
+                    <td><input type="text" name="Birthday" class="form_input"  readonly="readonly" id="idBirthday"></td>
+                    <td height="58"><div align="left" class="form_text">身份证号：</div></td>
+                    <td><input type="text" name="CertNbr" class="form_input" id="idCertNbr"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"  onclick="bindKeyboard('idCertNbr')"></td>
+                </tr>
+                <tr>
+                    <td height="58">
+                        <div align="left" class="form_text">电话号码：</div>
+                    </td>
+                    <td>
+                        <input type="text" name="CertNbr" class="form_input" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" id="idPhoneNo" onclick="bindKeyboard('idPhoneNo')">
+                    </td>
+                    <td height="58">
+                        <button class="button" onclick="TackIdentityCard()">读取身份证</button>
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <div align="left" style="font-size:16px;line-height:48px">疾病史<e class="red">(*)</e>：</div>
+            <textarea id="disease" style="width:650px;height:108px;font-size:24px;line-height:36px;" placeholder="请输入疾病史..." onclick="bindKeyboard('disease')"></textarea>
+        </div>
+        <div>
+            <div align="left" style="font-size:16px;line-height:48px">过敏史<e class="red">(*)</e>：</div>
+            <textarea id="allergy" style="width:650px;height:108px;font-size:24px;line-height:36px;" placeholder="请输入过敏史..." onclick="bindKeyboard('allergy')"></textarea>
+        </div>
+        <div id="softkey" style="width:651px;height:1px;margin-top:5px;height:198px;"></div>
+        <object style="display:none" id="CVR_IDCard" name="CVR_IDCard" classid="clsid:10946843-7507-44FE-ACE8-2B3483D179B7"
+                width="0" height="0"></object>
+    </div>
+</body>
+</html>

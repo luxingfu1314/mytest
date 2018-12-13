@@ -1,0 +1,8 @@
+D:\上海健麾\Projects\Mis9.DminiWeb\Mis9.Dmini.DAL\bin\x86\Debug\Mis9.Dmini.DAL.dll
+D:\上海健麾\Projects\Mis9.DminiWeb\Mis9.Dmini.DAL\bin\x86\Debug\Mis9.Dmini.DAL.pdb
+D:\上海健麾\Projects\Mis9.DminiWeb\Mis9.Dmini.DAL\bin\x86\Debug\Mis9.CommonTools.dll
+D:\上海健麾\Projects\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\x86\Debug\Mis9.Dmini.DAL.csprojResolveAssemblyReference.cache
+D:\上海健麾\Projects\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\x86\Debug\Mis9.Dmini.DAL.csproj.CoreCompileInputs.cache
+D:\上海健麾\Projects\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\x86\Debug\Mis9.Dmini.DAL.csproj.CopyComplete
+D:\上海健麾\Projects\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\x86\Debug\Mis9.Dmini.DAL.dll
+D:\上海健麾\Projects\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\x86\Debug\Mis9.Dmini.DAL.pdb
