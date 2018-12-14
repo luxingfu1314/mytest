@@ -77,7 +77,7 @@ public partial class Forms_HomePage : System.Web.UI.Page
         string path = HostingEnvironment.MapPath("/UserImage");
         string[] files = Directory.GetFiles(path, "QR*", SearchOption.TopDirectoryOnly);
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < files.Length; i++)
+        for (int i = 0; i <1; i++)
         {
             sb.AppendLine("<li>");
             sb.AppendLine("<p class=\"img\">");

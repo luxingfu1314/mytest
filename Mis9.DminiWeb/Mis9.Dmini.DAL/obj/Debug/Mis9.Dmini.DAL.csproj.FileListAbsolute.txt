@@ -12,3 +12,10 @@ C:\Users\19802\Desktop\自动售票机\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\Debug\Mi
 C:\Users\19802\Desktop\自动售票机\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\Debug\Mis9.Dmini.DAL.dll
 C:\Users\19802\Desktop\自动售票机\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\Debug\Mis9.Dmini.DAL.pdb
 C:\Users\19802\Desktop\自动售票机\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\Debug\Mis9.Dmini.DAL.csprojAssemblyReference.cache
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.DAL\bin\Debug\Mis9.Dmini.DAL.dll
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.DAL\bin\Debug\Mis9.Dmini.DAL.pdb
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\Debug\Mis9.Dmini.DAL.csprojAssemblyReference.cache
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\Debug\Mis9.Dmini.DAL.csproj.CoreCompileInputs.cache
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\Debug\Mis9.Dmini.DAL.csproj.CopyComplete
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\Debug\Mis9.Dmini.DAL.dll
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.DAL\obj\Debug\Mis9.Dmini.DAL.pdb

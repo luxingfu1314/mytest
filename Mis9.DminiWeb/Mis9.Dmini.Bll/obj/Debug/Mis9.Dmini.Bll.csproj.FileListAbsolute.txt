@@ -18,3 +18,13 @@ C:\Users\19802\Desktop\自动售票机\Mis9.DminiWeb\Mis9.Dmini.Bll\obj\Debug\Mi
 C:\Users\19802\Desktop\自动售票机\Mis9.DminiWeb\Mis9.Dmini.Bll\obj\Debug\Mis9.Dmini.Bll.csproj.CopyComplete
 C:\Users\19802\Desktop\自动售票机\Mis9.DminiWeb\Mis9.Dmini.Bll\obj\Debug\Mis9.Dmini.Bll.dll
 C:\Users\19802\Desktop\自动售票机\Mis9.DminiWeb\Mis9.Dmini.Bll\obj\Debug\Mis9.Dmini.Bll.pdb
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.Bll\bin\Debug\Mis9.Dmini.Bll.dll.config
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.Bll\bin\Debug\Mis9.Dmini.Bll.dll
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.Bll\bin\Debug\Mis9.Dmini.Bll.pdb
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.Bll\bin\Debug\Mis9.Dmini.DAL.dll
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.Bll\bin\Debug\Mis9.Dmini.DAL.pdb
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.Bll\obj\Debug\Mis9.Dmini.Bll.csprojAssemblyReference.cache
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.Bll\obj\Debug\Mis9.Dmini.Bll.csproj.CoreCompileInputs.cache
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.Bll\obj\Debug\Mis9.Dmini.Bll.csproj.CopyComplete
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.Bll\obj\Debug\Mis9.Dmini.Bll.dll
+E:\temp\git\repository\Mis9.DminiWeb\Mis9.Dmini.Bll\obj\Debug\Mis9.Dmini.Bll.pdb

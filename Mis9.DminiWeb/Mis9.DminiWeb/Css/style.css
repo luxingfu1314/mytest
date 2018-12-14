@@ -657,7 +657,7 @@ body{background:#f2f2f2}
 
 /*新首页*/
 .index {
-    background: #1884cc
+    background:#555555
 }
 
 .logovt {
@@ -725,7 +725,7 @@ body{background:#f2f2f2}
 }
 
     .fuit .dsor {
-        width: 596px;
+        width: 600px;
         margin: 0;
         position: relative;
         float: left
@@ -738,27 +738,27 @@ body{background:#f2f2f2}
 
         .fuit .dsor .tex {
             position: absolute;
-            top: 60px;
-            left: 240px;
-            color: #fff
+            top: 40px;
+            left: 440px;
+            color: #FFD700
         }
 
             .fuit .dsor .tex .ti {
-                font-size: 48px
+                font-size: 40px
             }
 
             .fuit .dsor .tex .ci {
-                font-size: 30px;
+                font-size: 35px;
                 margin: 5px auto auto
             }
 
     .fuit .erm {
-        float: right;
-        background: #449bd5;
-        width: 242px;
+        float: left;
+        background: #8B8386;
+        width: 880px;
         padding: 40px;
-        text-align: center;
-        color: #fff;
+        text-align: left;
+        color: #FFD700;
         font-size: 24px;
         -moz-border-radius: 20px;
         -webkit-border-radius: 20px;
@@ -766,8 +766,20 @@ body{background:#f2f2f2}
     }
 
         .fuit .erm li {
-            margin-bottom: 20px
+            margin-bottom: 5px
         }
+         .fuit .wxts1 {
+            float: right;
+            background: #8B8386;
+            width: 450px;
+            padding: 40px;
+            text-align: left;
+            color: #FFD700;
+            font-size: 30px;
+            -moz-border-radius: 20px;
+            -webkit-border-radius: 20px;
+        border-radius: 20px;
+    }
 .zfbox {
     width: 600px;
     top: 300px;

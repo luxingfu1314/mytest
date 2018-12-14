@@ -47,18 +47,18 @@
                     <%=PicJs() %>
                 </div>
             </div>
-            <div class="wxts">
+        <!--    <div class="wxts">
                 <span>
                     <img src="../Images/isj_18.png" width="84" height="70" />
                 </span>
                 <%=GetYQTS() %>
-            </div>
+            </div>-->
             <div class="fuit clearfix">
                 <div class="dsor">
                     <div class="ds1" <%=MarginJS %>>
                         <p class="img">
                             <a href="../Forms/Drugs_01.aspx">
-                                <img src="../Images/i3-3.png" width="596" height="240" /></a>
+                                <img src="../Images/i3-3.png" width="960" height="240" /></a>
                         </p>
                         <div class="tex">
                             <a href="../Forms/Drugs_01.aspx">
@@ -70,7 +70,7 @@
                     <div class="ds1" <%=LocDisJS %>>
                         <p class="img">
                             <a href="../Forms/Drugs_02.aspx">
-                                <img src="../Images/i2-3.png" width="596" height="240" /></a>
+                                <img src="../Images/i2-3.png" width="960" height="240" /></a>
                         </p>
                         <div class="tex">
                             <a href="../Forms/Drugs_02.aspx">
@@ -94,7 +94,7 @@
                     <div class="ds1" <%=MarginJS %>>
                         <p class="img">
                             <a href="../Forms/Drugs_04.aspx">
-                                <img src="../Images/i4-3.png" width="596" height="240" /></a>
+                                <img src="../Images/i4-3.png" width="960" height="240" /></a>
                         </p>
                         <div class="tex">
                             <a href="../Forms/Drugs_04.aspx">
@@ -106,7 +106,7 @@
                     <div class="ds1" <%=MarginJS %>>
                         <p class="img">
                             <a href="../Forms/Drugs_05.aspx">
-                                <img src="../Images/i7-3.png" width="596" height="240" /></a>
+                                <img src="../Images/i7-3.png" width="960" height="240" /></a>
                         </p>
                         <div class="tex">
                             <a href="../Forms/Drugs_05.aspx">
@@ -115,8 +115,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="erm">
+                    <div class="erm">
                     <ul>
                         <%=GetQRJS() %>
                         <%--<li>
@@ -135,7 +134,15 @@
                             <p class="mt20">二维码3</p>
                         </li>--%>
                     </ul>
+                   <div class="wxts1">
+                <span>
+                    <img src="../Images/isj_18.png" width="84" height="70" />
+                </span>
+                <%=GetYQTS() %>
+            </div>
                 </div>
+                </div>
+                
             </div>
         </div>
     </div>
