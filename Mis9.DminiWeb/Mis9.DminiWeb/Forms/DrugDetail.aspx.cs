@@ -124,7 +124,7 @@ public partial class Form_DrugDetail : System.Web.UI.Page
         //是否存在3D模型
         if (ins.Exist3DModel(Drugid))
         {//展示3D模型超链接
-            sb.AppendLine("<iframe width=\"824\" height=\"480\" style=\"margin:-50px -100px  0 -100px;\" name = \"ifm\" id = \"ifm\" style = \"background-color: transparent;\"></iframe>");
+            sb.AppendLine("<iframe width=\"824\" height=\"480\" style=\"margin:-50px -100px  0 -50px;\" name = \"ifm\" id = \"ifm\" style = \"background-color: transparent;\"></iframe>");
             //sb.AppendLine("<a class='mi' style='font-size:18px' href = '../Forms/Drug3D.aspx?id=" + Drugid + "'> 3D模型展示 </a>");
             _3DFlg = 1;
         }

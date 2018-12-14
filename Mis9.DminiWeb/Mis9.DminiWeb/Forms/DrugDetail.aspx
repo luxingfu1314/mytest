@@ -37,13 +37,15 @@
                         </div>
                         <span class="n">库存：<%=GetStorage() %></span>
                     </div>
-                    <div class="vbtn mt40" <%=CartDisJS %>>
-                        <a href="#" onclick="CheckAddCart()" class="btn">加入购物车</a>
-                        <a href="#" onclick="CheckGotoCart()" class="btn buy">立即购买</a>
-                    </div>
+                    
                 </div>
                 <div class="cf clearfix">
                     <%=InstructionsJS %>
+                </div>
+                <div class="vbtn mt40" >
+                   <%--  <%=CartDisJS %>--%>
+                        <a href="#" onclick="CheckAddCart()" class="btn">加入购物车</a>
+                        <a href="#" onclick="CheckGotoCart()" class="btn buy">立即购买</a>
                 </div>
             </div>
             <div style="height:160px;"></div>

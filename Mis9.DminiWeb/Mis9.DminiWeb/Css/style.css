@@ -510,9 +510,18 @@ body{background:#f2f2f2}
         text-align: center;
             
     }
-.yaox{width:724px; padding:50px; margin:50px auto; background:#fff}
-.xqig{text-align:center}
-.xqig .ti{font-size:30px; margin:20px auto 10px}
+.yaox{width:724px; padding:50px; margin:50px auto; background:#FFFFFF;}
+.xqig {
+    text-align: left;
+    background: #FFFFFF;
+    padding: 0px;
+}
+ 
+    .xqig .ti {
+        font-size: 30px;
+        margin: 20px auto 10px;
+       
+    }
 .xqig .ci{font-size:20px}
 .xqig .sl{font-size:20px; margin:5px auto auto;}
     .xqig .sl span {
@@ -527,29 +536,35 @@ body{background:#f2f2f2}
     }
 .sulj{width:120px; margin:auto; position:relative; padding:0 60px; font-size:20px}
 .sulj span.m{display:block; position:absolute; top:5px; left:0}
-.sulj span.n{display:block; position:absolute; top:5px; left:140px; width:200px}
-.vbtn{text-align:center}
+.sulj span.n{display:block; position:absolute; top:5px; left:160px; width:200px}
+.vbtn{text-align:right;background:#FFFFFF;}
 
-.btn{display:inline-block; padding:15px 30px; background:#77d4c1; color:#fff; font-size:30px;
- -moz-border-radius:10px;
-    -webkit-border-radius:10px;
-    border-radius:10px;
+.btn{display:inline-block; padding:15px 15px; background:#FFFFFF; color:#FF0000; font-size:30px;
+ -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+    border-radius:0px;
 }
-.buy{background:#f3ac67}
+.buy {
+    background: #FF0000;
+    color: #FFFFFF;
+}
 .vbtn .btn{width:150px; margin:0 10px}
-
-.cf{margin:80px auto auto; background:#f5fefc}
 .cf .cfli{float:left; width:140px}
-.cf .cfli dd{background:#f6f6f6; padding:20px; font-size:22px; color:#999}
-    .cf .cfli dd.current {
-        color: #77d4c1;
-        background: #f5fefc
+    .cf .cfli dd {
+        background: #FFFFFF;
+        padding: 20px;
+        font-size: 22px;
+        color: #999
     }
+        .cf .cfli dd.current {
+            color: #77d4c1;
+            background: #F8F8FF
+        }
 .cf .cfri{padding:20px; line-height:30px; font-size:22px; margin-left:140px}
 
 .cf {
-    margin: 80px auto auto;
-    background: #f5fefc
+    margin: 40px auto auto;
+    background: #F8F8FF
 }
 
 .cfli {
