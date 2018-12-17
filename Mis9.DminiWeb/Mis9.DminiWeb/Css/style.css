@@ -539,7 +539,7 @@ body{background:#f2f2f2}
 .sulj span.n{display:block; position:absolute; top:5px; left:160px; width:200px}
 .vbtn{text-align:right;background:#FFFFFF;}
 
-.btn{display:inline-block; padding:15px 15px; background:#FFFFFF; color:#FF0000; font-size:30px;
+.btn{ padding:15px 15px; background:#FFFFFF; color:#FF0000; font-size:30px;
  -moz-border-radius:0px;
     -webkit-border-radius:0px;
     border-radius:0px;
